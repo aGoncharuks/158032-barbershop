@@ -7,9 +7,7 @@
 <body>
   <header class="main-header">
     <div class="container">
-      <div class="logo">
-        <a src="index.html"><img src="http://placehold.it/100x25" alt="Barbershop logo"></a>
-      </div>
+      <a src="index.html"><img src="http://placehold.it/100x25" alt="Логотип Барбершопа" class="logo"></a>
       <nav class="main-navigation">
         <ul>
           <li>
@@ -21,9 +19,7 @@
           <li>
             <a href="#">Прайс-лист</a>
           </li>
-          <li>
-            <a href="#">Магазин</a>
-          </li>
+          <li class="active">Магазин</li>
           <li>
             <a href="#">Контакты</a>
           </li>
@@ -41,8 +37,8 @@
       <a href="#">Магазин</a>
       <span>Средства для ухода</span>
     </section>
-    <form action="#" class="item-filters">
-      <b class="filter-name">Производители</b>
+    <form action="#" class="filters">
+      <b class="filters-group-title">Производители</b>
       <input type="checkbox" id="baxter" name="baxter">
       <label for="baxter">Baxter of California</label>
       <input type="checkbox" id="mrnatty" name="mrnatty">
@@ -55,12 +51,12 @@
       <label for="murrays">Murray's</label>
       <input type="checkbox" id="americancrew" name="americancrew">
       <label for="americancrew">American crew</label>
-      <b class="filter-name">Группы товаров</b>
-      <input type="radio" id="shaving" name="shaving">
+      <b class="filters-group-title">Группы товаров</b>
+      <input type="radio" id="shaving" name="category">
       <label for="shaving">Бритвеные принадлежности</label>
-      <input type="radio" id="care" name="care">
+      <input type="radio" id="care" name="category">
       <label for="care">Средства для ухода</label>
-      <input type="radio" id="accessories" name="accessories">
+      <input type="radio" id="accessories" name="category">
       <label for="accessories">Аксессуары</label>
       <button type="submit">Показать</button>
     </form>
@@ -68,64 +64,78 @@
       <ul>
         <li>
           <a href="#">
-            <img src="http://placehold.it/220x290" alt="Item photo" class="item-photo">
+            <img src="http://placehold.it/220x290" alt="Фото товара" class="item-photo">
           </a>
           <h2>
-            <a href="#" class="item-name">Набор для путешествий<br>"Baxter of California"</a>
+            <a href="#" class="item-name">Набор для путешествий<br>&laquoBaxter of California&raquo</a>
           </h2>
           <span class="item-price">2 900 руб.</span>
-          <button class="add-to-cart">Купить</button>
+          <button class="item-to-cart">Купить</button>
+          <a href="#" class="btn .is-hidden">Корзина</a>
         </li>
         <li>
           <a href="#">
-            <img src="http://placehold.it/220x290" alt="Item photo" class="item-photo">
+            <img src="http://placehold.it/220x290" alt="Фото товара" class="item-photo">
           </a>
           <h2>
-            <a href="#" class="item-name">Увлажняющий кондиционер<br>"Baxter of California"</a>
+            <a href="#" class="item-name">Увлажняющий кондиционер<br>&laquoBaxter of California&raquo</a>
           </h2>
           <span class="item-price">750 руб.</span>
-          <button class="add-to-cart">Купить</button>
+          <button class="item-to-cart">Купить</button>
+          <a href="#" class="btn .is-hidden">Корзина</a>
         </li>
         <li>
-          <a href="#"><img src="http://placehold.it/220x290" alt="Item photo" class="item-photo"></a>
+          <a href="#"><img src="http://placehold.it/220x290" alt="Фото товара" class="item-photo"></a>
           <h2>
-            <a href="#" class="item-name">Гель для волос<br>"Suavecito"</a>
+            <a href="#" class="item-name">Гель для волос<br>&laquoSuavecito&raquo</a>
           </h2>
           <span class="item-price">290 руб.</span>
-          <button class="add-to-cart">Купить</button>
+          <button class="item-to-cart">Купить</button>
+          <a href="#" class="btn .is-hidden">Корзина</a>
         </li>
         <li>
-          <a href="#"><img src="http://placehold.it/220x290" alt="Item photo" class="item-photo"></a>
+          <a href="#"><img src="http://placehold.it/220x290" alt="Фото товара" class="item-photo"></a>
           <h2>
-            <a href="#" class="item-name">Глина для укладки волос<br>"American crew"</a>
+            <a href="#" class="item-name">Глина для укладки волос<br>&laquoAmerican crew&raquo</a>
           </h2>
           <span class="item-price">500 руб.</span>
-          <button class="add-to-cart">Купить</button>
+          <button class="item-to-cart">Купить</button>
+          <a href="#" class="btn .is-hidden">Корзина</a>
         </li>
         <li>
-          <a href="#"><img src="http://placehold.it/220x290" alt="Item photo" class="item-photo"></a>
+          <a href="#"><img src="http://placehold.it/220x290" alt="Фото товара" class="item-photo"></a>
           <h2>
-            <a href="#" class="item-name">Гель для волос<br>"American crew"</a>
+            <a href="#" class="item-name">Гель для волос<br>&laquoAmerican crew&raquo</a>
           </h2>
           <span class="item-price">300 руб.</span>
-          <button class="add-to-cart">Купить</button>
+          <button class="item-to-cart">Купить</button>
+          <a href="#" class="btn .is-hidden">Корзина</a>
         </li>
         <li>
-          <a href="#"><img src="http://placehold.it/220x290" alt="Item photo" class="item-photo"></a>
+          <a href="#"><img src="http://placehold.it/220x290" alt="Фото товара" class="item-photo"></a>
           <h2>
-            <a href="#" class="item-name">Набор для бритья<br>"Baxter of California"</a>
+            <a href="#" class="item-name">Набор для бритья<br>&laquoBaxter of California&raquo</a>
           </h2>
           <span class="item-price">3 900 руб.</span>
-          <button class="add-to-cart">Купить</button>
+          <button class="item-to-cart">Купить</button>
+          <a href="#" class="btn .is-hidden">Корзина</a>
         </li>
       </ul>
     </div>
-    <section class="item-list-nav">
-      <button class="page-number">1</button>
-      <button class="page-number">2</button>
-      <button class="page-number">3</button>
-      <button class="page-number">4</button>
-    </section>
+    <ul class="pagination">
+      <li>
+        <a href="#">1</a>
+      </li>
+      <li>
+        <a href="#">2</a>
+      </li>
+      <li>
+        <a href="#">3</a>
+      </li>
+      <li>
+        <a href="#">4</a>
+      </li>
+    </ul>
   </main>
   <footer class="main-footer">
     <div class="container">
