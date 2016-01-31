@@ -38,26 +38,30 @@
       <span>Средства для ухода</span>
     </section>
     <form action="#" class="filters">
-      <b class="filters-group-title">Производители</b>
-      <input type="checkbox" id="baxter" name="baxter">
-      <label for="baxter">Baxter of California</label>
-      <input type="checkbox" id="mrnatty" name="mrnatty">
-      <label for="mrnatty">Mr Natty</label>
-      <input type="checkbox" id="suavecito" name="suavecito">
-      <label for="suavecito">Suavecito</label>
-      <input type="checkbox" id="malin" name="malin">
-      <label for="malin">Malin+Goetz</label>
-      <input type="checkbox" id="murrays" name="murrays">
-      <label for="murrays">Murray's</label>
-      <input type="checkbox" id="americancrew" name="americancrew">
-      <label for="americancrew">American crew</label>
-      <b class="filters-group-title">Группы товаров</b>
-      <input type="radio" id="shaving" name="category" value="shaving">
-      <label for="shaving">Бритвеные принадлежности</label>
-      <input type="radio" id="care" name="category" value="care">
-      <label for="care">Средства для ухода</label>
-      <input type="radio" id="accessories" name="category" value="accessories">
-      <label for="accessories">Аксессуары</label>
+      <fieldset class="vendors">
+        <legend>Производители</legend>
+        <input type="checkbox" id="baxter" name="baxter">
+        <label for="baxter">Baxter of California</label>
+        <input type="checkbox" id="mrnatty" name="mrnatty">
+        <label for="mrnatty">Mr Natty</label>
+        <input type="checkbox" id="suavecito" name="suavecito">
+        <label for="suavecito">Suavecito</label>
+        <input type="checkbox" id="malin" name="malin">
+        <label for="malin">Malin+Goetz</label>
+        <input type="checkbox" id="murrays" name="murrays">
+        <label for="murrays">Murray's</label>
+        <input type="checkbox" id="americancrew" name="americancrew">
+        <label for="americancrew">American crew</label>
+      </fieldset>
+      <fieldset class="item-groups">
+        <legend>Группы товаров</legend>
+        <input type="radio" id="shaving" name="category" value="shaving">
+        <label for="shaving">Бритвеные принадлежности</label>
+        <input type="radio" id="care" name="category" value="care">
+        <label for="care">Средства для ухода</label>
+        <input type="radio" id="accessories" name="category" value="accessories">
+        <label for="accessories">Аксессуары</label>
+      </fieldset>
       <button type="submit">Показать</button>
     </form>
     <div class="items-list">
