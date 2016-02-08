@@ -1,14 +1,62 @@
+/*for tests*/
+.tests::after {
+  content: "";
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.index-tests::after {
+  background: url("../img/barbershop-index-full.jpg") no-repeat top center;
+}
+
+.shop-tests::after {
+  background: url("../img/barbershop-shop-full.jpg") no-repeat top center;
+}
+
+.item-tests::after {
+  background: url("../img/barbershop-item-full.jpg") no-repeat top center;
+}
+
+/*tools*/
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.margin-left {
+  margin-left: 20px;
+}
+
 /*base*/
-html,
+html {
+  min-width: 1122px;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   min-width: 1122px;
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
+/*for tests*/
+  position: relative;
+  outline: 2px solid blue;
   font-size: 14px;
-  line-height: 1.86;
+  line-height: 24px;
+  text-transform: uppercase;
   color: #000000;
   font-weight: bold;
-  font-family: "PT Sans Narrow Bold",  "Arial", sans-serif;
+  font-family: "PT Sans Narrow",  "Arial", sans-serif;
 }
 
 h1 {
@@ -16,44 +64,60 @@ h1 {
   line-height: 1.5;
   color: #000000;
   font-weight: bold;
-  font-family: "PT Sans Regular",  "Arial", sans-serif;
+  font-family: "PT Sans Narrow",  "Arial", sans-serif;
+  margin: 0;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 24px;
   line-height: 1.5;
   color: #000000;
   font-weight: bold;
-  font-family: "PT Sans Regular",  "Arial", sans-serif;
+  font-family: "PT Sans Narrow",  "Arial", sans-serif;
+  margin: 0;
 }
 
-.clearfix::after {
-  content: "";
-
-  display: table;
-  clear: both;
+legend {
+  margin-bottom: 35px;
+}
+/*layout*/
+.main-header {
+  margin-bottom: 60px;
+  outline: 2px dashed red;
 }
 
 .container {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
+  outline: 2px solid blue;
 }
 
-.main-header {
-  margin-bottom: 60px;
+.main-footer {
+  margin-top: 40px;
+  padding-top: 60px;
+  outline: 2px dashed red;
 }
 
+/*modules*/
 .main-navigation {
   float: left;
   width: 780px;
   min-height: 70px;
+  outline: 2px dotted green;
+}
+
+.main-navigation li {
+  display: inline-block;
+  margin-right: 40px;
 }
 
 .user-block {
   float: right;
   width: 140px;
   min-height: 70px;
+  outline: 2px dotted green;
+  text-align: center;
 }
 
 .index-logo {
@@ -96,10 +160,134 @@ h2 {
   min-height: 330px;
 }
 
-.main-footer {
-  margin-top: 65px;
-  padding-top: 60px;
-  padding-bottom: 40px;
+.breadcrumbs {
+  margin-bottom: 40px;
+}
+
+.breadcrumbs a,
+.breadcrumbs span {
+  margin-right: 40px;
+}
+
+.filters {
+  width: 200px;
+  float: left;
+  outline: 2px dotted green;
+}
+
+.filters legend {
+  font-size: 24px;
+}
+
+.filters label {
+  display: block;
+  margin-bottom: 15px;
+  outline: 1px dotted green;
+}
+
+.filters fieldset {
+  padding: 0;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.filters input {
+  margin-right: 25px;
+}
+
+.filters label {
+  display: inline-block;
+  width: 140px;
+}
+
+.items-list {
+  width: 730px;
+  height: 615px;
+  float: right;
+  outline: 2px dotted green;
+}
+
+.items-list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.items-list h2 {
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: none;
+}
+
+.items-list li {
+  display: inline-block;
+  width: 220px;
+  height: 286px;
+  background-color: #ffffff;
+  margin: 10px;
+  outline: 2px dotted green;
+}
+
+.pagination {
+  clear: both;
+  margin: 0;
+  padding: 45px 0 25px 240px;
+  outline: 2px dotted green;
+}
+
+.pagination li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.gallery {
+  float: left;
+  width: 460px;
+  outline: 2px dashed blue;
+}
+
+.gallery img {
+  display: inline-block;
+  outline: 2px dotted green;
+}
+
+.gallery .photo-main {
+  margin-top: 14px;
+  margin-bottom: 17px;
+}
+
+.gallery .photo-small {
+  margin-right: 16px;
+  margin-bottom: 5px;
+}
+
+.gallery .photo-small:last-child {
+  margin-right: 0;
+}
+
+
+.item-info {
+    padding-top: 22px;
+    width: 410px;
+    float: right;
+    outline: 2px dotted green;
+}
+
+.item-info .item-availability {
+  display: inline-block;
+  margin-right: 175px;
+}
+
+.item-info .item-description {
+  margin-bottom: 50px;
+}
+
+.item-info .item-price {
+  display: inline-block;
+  margin-bottom: 65px;
+}
+
+.item-components li {
+  margin-bottom: 4px;
 }
 
 .footer-contacts {
@@ -119,4 +307,10 @@ h2 {
   float: right;
   width: 180px;
   min-height: 90px;
+}
+
+/*state*/
+
+.is-hidden {
+  display: none;
 }

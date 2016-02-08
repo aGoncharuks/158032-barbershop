@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Товар</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css" type='text/css'>
 </head>
-<body>
+<body class="item-tests tests"> <!--for tests-->
   <header class="main-header">
-    <div class="container">
-      <a href="index.html"><img src="img/img_header_logo.png" width="111" height="24" alt="Логотип Барбершопа" class="logo"></a>
+    <div class="container clearfix">
       <nav class="main-navigation">
         <ul>
+          <li>
+            <a href="index.html">
+              <img src="img/img_header_logo.png" width="111" height="24" alt="Логотип Барбершопа" class="logo">
+            </a>
+          </li>
           <li>
             <a href="#">Информация</a>
           </li>
@@ -31,7 +36,7 @@
       </div>
     </div>
   </header>
-  <main class="main-container">
+  <main class="container clearfix">
     <h1 class="category-name">Набор для путешествий «Baxter of California»</h1>
     <section class="breadcrumbs">
       <a href="#">Главная</a>
@@ -46,17 +51,17 @@
       <img src="img/img_item_photo_small_3.jpg" width="140" height="149" alt="Дополнительное фото товара" class="photo-small">
     </section>
     <section class="item-info">
-      <p class="item-availability">
+      <p class="item-availability margin-left">
         <span class="in-stock-or-not">Есть</span>
         в наличии
       </p>
       <span class="item-stock-number">Артикул: Dexter-ae</span>
-      <p class="item-description">
+      <p class="item-description margin-left">
         Travel kit - необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средсто для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
       </p>
-      <span class="item-price">2 900 руб.</span>
+      <span class="item-price margin-left">2 900 руб.</span>
       <button class="item-to-cart">Купить</button>
-      <h1>В набор входят:</h1>
+      <h2 class="margin-left">В набор входят:</h2>
       <ul class="item-components">
         <li>Средство для умывания(50 мл)</li>
         <li>Увлажняющий крем(50 мл)</li>
@@ -67,7 +72,7 @@
     </section>
   </main>
   <footer class="main-footer">
-    <div class="container">
+    <div class="container clearfix">
       <section class="footer-contacts">
         Барбершоп «Бородинский»<br>
         Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>

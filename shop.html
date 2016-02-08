@@ -3,13 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Магазин</title>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css" type='text/css'>
 </head>
-<body>
+<body class="shop-tests tests"> <!--for tests-->
   <header class="main-header">
-    <div class="container">
-      <a href="index.html"><img src="img/img_header_logo.png" width="111" height="24" alt="Логотип Барбершопа" class="logo"></a>
+    <div class="container clearfix">
       <nav class="main-navigation">
         <ul>
+          <li>
+            <a href="index.html">
+              <img src="img/img_header_logo.png" width="111" height="24" alt="Логотип Барбершопа" class="logo">
+            </a>
+          </li>
           <li>
             <a href="#">Информация</a>
           </li>
@@ -30,7 +36,7 @@
       </div>
     </div>
   </header>
-  <main class="main-container">
+  <main class="container">
     <h1 class="category-name">Средства для ухода</h1>
     <section class="breadcrumbs">
       <a href="#">Главная</a>
@@ -39,28 +45,28 @@
     </section>
     <form action="#" class="filters">
       <fieldset class="vendors">
-        <legend>Производители</legend>
-        <input type="checkbox" id="baxter" name="baxter">
-        <label for="baxter">Baxter of California</label>
-        <input type="checkbox" id="mrnatty" name="mrnatty">
-        <label for="mrnatty">Mr Natty</label>
-        <input type="checkbox" id="suavecito" name="suavecito">
-        <label for="suavecito">Suavecito</label>
-        <input type="checkbox" id="malin" name="malin">
-        <label for="malin">Malin+Goetz</label>
-        <input type="checkbox" id="murrays" name="murrays">
-        <label for="murrays">Murray's</label>
-        <input type="checkbox" id="americancrew" name="americancrew">
-        <label for="americancrew">American crew</label>
+        <legend>Производители:</legend>
+        <input type="checkbox" id="baxter" name="baxter" checked>
+         <label for="baxter">Baxter of California</label><br>
+         <input type="checkbox" id="mrnatty" name="mrnatty">
+         <label for="mrnatty">Mr Natty</label><br>
+         <input type="checkbox" id="suavecito" name="suavecito">
+         <label for="suavecito">Suavecito</label><br>
+         <input type="checkbox" id="malin" name="malin" checked>
+         <label for="malin">Malin+Goetz</label><br>
+         <input type="checkbox" id="murrays" name="murrays">
+         <label for="murrays">Murray's</label><br>
+         <input type="checkbox" id="americancrew" name="americancrew" checked>
+         <label for="americancrew">American crew</label><br>
       </fieldset>
       <fieldset class="item-groups">
-        <legend>Группы товаров</legend>
+        <legend>Группы товаров:</legend>
         <input type="radio" id="shaving" name="category" value="shaving">
-        <label for="shaving">Бритвеные принадлежности</label>
-        <input type="radio" id="care" name="category" value="care">
-        <label for="care">Средства для ухода</label>
+        <label for="shaving">Бритвеные принадлежности</label><br>
+        <input type="radio" id="care" name="category" value="care" checked>
+        <label for="care">Средства для ухода</label><br>
         <input type="radio" id="accessories" name="category" value="accessories">
-        <label for="accessories">Аксессуары</label>
+        <label for="accessories">Аксессуары</label><br>
       </fieldset>
       <button type="submit">Показать</button>
     </form>
@@ -140,7 +146,7 @@
     </ul>
   </main>
   <footer class="main-footer">
-    <div class="container">
+    <div class="container clearfix">
       <section class="footer-contacts">
         Барбершоп «Бородинский»<br>
         Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
